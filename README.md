@@ -1,57 +1,74 @@
-import random
+<!-- HEADER SECTION -->
+<div align="center">
+  <h1>👋 Hi, I'm Poomza1201!</h1>
+  <p><strong>🚀 Code Sandbox | Public Repository | Creative Space</strong></p>
+  <p>Welcome to my GitHub space. This is where I dump my ideas, experiments, and whatever I feel like building.</p>
+</div>
 
-# Define the maze as a list of lists
-maze = [
-    ['#', '#', '#', '#', '#', '#', '#', '#', '#', '#'],
-    ['#', ' ', ' ', ' ', '#', ' ', ' ', ' ', ' ', '#'],
-    ['#', ' ', '#', ' ', '#', ' ', '#', '#', ' ', '#'],
-    ['#', ' ', '#', ' ', ' ', ' ', ' ', '#', ' ', '#'],
-    ['#', ' ', '#', '#', '#', '#', ' ', '#', ' ', '#'],
-    ['#', ' ', ' ', ' ', ' ', '#', ' ', ' ', ' ', '#'],
-    ['#', '#', '#', '#', ' ', '#', '#', '#', '#', '#'],
-    ['#', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '#'],
-    ['#', '#', '#', '#', '#', '#', '#', '#', 'E', '#']
-]
+<p align="center">
+  <img src="https://komarev.com" alt="visitor count" />
+</p>
 
-# Define player's starting position
-player_row = 1
-player_col = 1
+---
 
-# Define trap position
-trap_row = random.randint(1, 7)
-trap_col = random.randint(1, 7)
+<!-- ABOUT ME SECTION -->
+## 🌟 About This Space
 
-# Define treasure position
-treasure_row = 8
-treasure_col = 8
+This profile is a personal creative sandbox. There are no strict rules or corporate bios here—I just code for fun, learn what interests me, and share whatever I want, whenever I feel like it.
 
-# Main game loop
-while True:
-    # Print the maze
-    for row in maze:
-        print(''.join(row))
-    
-    # Check if the player has reached the treasure
-    if player_row == treasure_row and player_col == treasure_col:
-        print("Congratulations! You've found the treasure!")
-        break
-    
-    # Check if the player has stepped on a trap
-    if player_row == trap_row and player_col == trap_col:
-        print("Oops! You've stepped on a trap. Game Over!")
-        break
-    
-    # Get user input for movement
-    move = input("Enter your move (W/A/S/D): ").upper()
-    
-    # Update player position based on user input
-    if move == 'W' and maze[player_row - 1][player_col] != '#':
-        player_row -= 1
-    elif move == 'A' and maze[player_row][player_col - 1] != '#':
-        player_col -= 1
-    elif move == 'S' and maze[player_row + 1][player_col] != '#':
-        player_row += 1
-    elif move == 'D' and maze[player_row][player_col + 1] != '#':
-        player_col += 1
-    else:
-        print("Invalid move! Try again.")
+- 🔭 **What I do:** Building random scripts, exploring logic, and testing out ideas.
+- 🌱 **My approach:** Learning on the go and following wherever my curiosity leads.
+- ⚡ **The Goal:** Just having fun with code. If a project is useful, great. If not, it was fun to make!
+
+---
+
+<!-- TECH STACK SECTION -->
+## 🛠️ Tools & Ecosystem
+
+### 💻 Technologies & Languages
+<p align="left">
+  <img src="https://shields.io" />
+  <img src="https://shields.io" />
+  <img src="https://shields.io" />
+  <img src="https://shields.io" />
+</p>
+
+---
+
+<!-- DETAILED STATS SECTION -->
+## 📊 GitHub Analytics
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <td>
+        <img src="https://vercel.app" alt="GitHub Stats" />
+      </td>
+      <td>
+        <img src="https://vercel.app" alt="Top Languages" />
+      </td>
+    </tr>
+  </table>
+  
+  <br/>
+  
+  <img src="https://herokuapp.com" alt="GitHub Streak" />
+</div>
+
+---
+
+<!-- CONTACT SECTION -->
+## 📫 Connections
+
+Feel free to browse around my repositories. If you find something interesting, enjoy!
+
+<p align="left">
+  <a href="https://github.com">
+    <img src="https://shields.io" />
+  </a>
+</p>
+
+<div align="center">
+  <img src="https://githubusercontent.com" alt="Snake Game" />
+  <p><sub><i>"I will post whatever I want to post." 😉🛠️</i></sub></p>
+</div>
